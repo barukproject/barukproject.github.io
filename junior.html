@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="komponen/css/owl.carousel.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="komponen/js/lightbox-plus-jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -793,8 +794,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="komponen/js/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   $(document).ready(function () {
+    // aos
+    AOS.init({
+      duration: 1200
+    });
     // Shuffle
     var Shuffle = window.Shuffle;
     var element = document.querySelector('.my-shuffle-container');

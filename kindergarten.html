@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="komponen/css/owl.carousel.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="komponen/css/lightbox.min.css">
-  <script src="komponen/js/lightbox-plus-jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -90,7 +90,7 @@
   <!-- End Section jumbotron global-->
 
   <!-- Section visi misi global-->
-  <section class="wrapper-padding visi-misi" id="misi">
+  <section class="wrapper-padding visi-misi" id="misi" data-aos="zoom-in">
     <div class="container">
       <div class="visi clearfix">
         <h1>VISI</h1>
@@ -170,7 +170,7 @@
   <!-- End Section visi misi global-->
 
   <!-- Section eksul -->
-  <section class="eskul mobile" id="eskul">
+  <section class="eskul mobile" id="eskul" data-aos="zoom-in-left">
     <div class="row mr-not">
       <div class="col-lg-4 pr-not">
         <div class="box-litle">
@@ -254,7 +254,7 @@
   <!-- End Section eksul -->
 
   <!-- Section eksul -->
-  <section class="eskul" id="eskul">
+  <section class="eskul" id="eskul" data-aos="zoom-in-right">
     <div class="row mr-not">
       <div class="col-lg-8 pr-not">
         <div class="box-big">
@@ -453,7 +453,7 @@
   <!-- End Section galery -->
 
   <!-- Section gallery tab shuffle -->
-  <section class="wrapper-padding galerry tabindex shuffle kindergarten" id="gallery">
+  <section class="wrapper-padding galerry tabindex shuffle kindergarten" id="gallery" data-aos="zoom-in-left">
     <div class="container">
       <h4>"GALERRY"</h4>
       <h6>School Gallery Photo</h6>
@@ -494,7 +494,7 @@
   <!-- End Section gallery tab shuffle -->
 
   <!-- Section ourteam -->
-  <section class="wrapper-padding ourteam" id="ourteam">
+  <section class="wrapper-padding ourteam" id="ourteam" data-aos="zoom-in-right">
     <div class="container">
       <h4>"OUR TEAM"</h4>
       <div class="owl-carousel owl-theme ourteam">
@@ -514,7 +514,7 @@
   <!-- End Section ourteam -->
 
   <!-- Section news -->
-  <section class="wrapper-padding news" id="news">
+  <section class="wrapper-padding news" id="news" data-aos="zoom-in-left">
     <div class="container">
       <h4>"NEWS"</h4>
       <div class="row">
@@ -596,7 +596,7 @@
   <!-- End Section news -->
 
   <!-- Section career -->
-  <section class="wrapper-padding career " id="career">
+  <section class="wrapper-padding career " id="career" data-aos="zoom-in-right">
     <div class="container">
       <h4>"CAREER"</h4>
       <h6>ABC KIDS & BRIGHTON JHS<br>
@@ -638,7 +638,7 @@
   <!-- End Section career -->
 
   <!-- Section ourpatners -->
-  <section class="wrapper-padding ourpartner" id="ourpatner">
+  <section class="wrapper-padding ourpartner" id="ourpatner" data-aos="zoom-in-left">
     <div class="container">
       <h4>"OUR PARTNERS"</h4>
       <div class="owl-carousel owl-theme ourpartner">
@@ -659,7 +659,7 @@
 
   <!-- Section information -->
 
-  <section class="information clearfix">
+  <section class="information clearfix" data-aos="zoom-in-right">
     <div class="row mr-not">
       <div class="col-md-12 col-lg-4 col-xl-4 pr-not">
         <div class="box-little">
@@ -710,7 +710,7 @@
   <!-- End Section information -->
 
   <!-- Section quotes -->
-  <section class="quotes clearfix">
+  <section class="quotes clearfix" data-aos="zoom-in-down">
     <div class="row mr-not">
       <div class="col-xl-7 pr-not">
         <div class="bg-child">
@@ -801,7 +801,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="komponen/js/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+  // aos
+  AOS.init({
+    duration: 1200
+  });
+  // end aos
   // Shuffle
   var Shuffle = window.Shuffle;
   var element = document.querySelector('.my-shuffle-container');
