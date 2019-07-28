@@ -19,6 +19,7 @@
   <script src="komponen/js/lightbox-plus-jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -114,7 +115,7 @@
   <!-- End Section jumbotron global-->
 
   <!--Section icon school  -->
-  <section class="icon-school" id="about">
+  <section class="icon-school" id="about" data-aos="zoom-in">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-4 col-lg-3 col-xl-3">
@@ -141,7 +142,7 @@
   <!-- End Section icon shcool-->
 
   <!-- section content-about -->
-  <section class="content-about">
+  <section class="content-about" data-aos="zoom-in-left">
     <div class="container">
       <h2>About Us</h2>
       <h4>National Plus School </h4>
@@ -168,7 +169,7 @@
   </section>
   <!-- End section content-about -->
   <!-- Section achievement -->
-  <section class="achievement index clearfix" id="achi">
+  <section class="achievement index clearfix" id="achi" data-aos="zoom-in-right">
     <div class="row mr-not">
       <div class="col-md-12 col-lg-4 col-xl-4 pr-not">
         <div class="box-little">
@@ -312,7 +313,7 @@
   <!-- End Seciton gallery tab normal -->
 
   <!-- Section gallery tab shuffle -->
-  <section class="wrapper-padding galerry tabindex shuffle" id="gallery">
+  <section class="wrapper-padding galerry tabindex shuffle" id="gallery" data-aos="zoom-in">
     <div class="container">
       <h4>"GALERRY"</h4>
       <h6>School Gallery Photo</h6>
@@ -353,7 +354,7 @@
   <!-- End Section gallery tab shuffle -->
 
   <!-- Seciton head office -->
-  <section class="head-office" id="office">
+  <section class="head-office" id="office" data-aos="zoom-in-down">
     <div class="maps-head">
       <div class="row mr-not">
         <div class="col-lg-4 col-xl-4  pr-not">
@@ -416,8 +417,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="komponen/js/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   $(document).ready(function () {
+    // aos
+    AOS.init({
+      duration: 1200
+    });
+    // end aos
     // Shuffle
     var Shuffle = window.Shuffle;
     var element = document.querySelector('.my-shuffle-container');
